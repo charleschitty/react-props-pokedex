@@ -1,0 +1,18 @@
+.Pokedex {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+}
+
+.Pokedex-name {
+  color: lightgray;
+}
+
+.Pokedex-pokemon {
+  flex-direction: row;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+}

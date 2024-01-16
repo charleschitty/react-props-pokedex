@@ -1,5 +1,5 @@
 import { Pokecard } from "./Pokecard";
-
+import './Pokedex.css';
 
 /** Given an array of objects describing different pokemon,
  *  renders a sequence of Pokecard components
@@ -8,8 +8,9 @@ import { Pokecard } from "./Pokecard";
  */
 function Pokedex({ pokemons }) {
   return (
-    <div>
-      <ul>
+    <div className="Pokedex">
+      <h1 className="Pokedex-name">Pokedex</h1>
+      <ul className="Pokedex-pokemon">
         {pokemons.map(p => <li>{Pokecard(p)}</li>)};
       </ul>
     </div>
