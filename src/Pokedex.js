@@ -6,7 +6,8 @@ import './Pokedex.css';
  *
  *  Ex props: [{id: 4, name: 'Charmander', type: 'fire', base_experience: 62}]
  */
-function Pokedex({ pokemons }) {
+function Pokedex({ pokemons, totalExp, isWinner }) {
+
   return (
     <div className="Pokedex">
       <h1 className="Pokedex-name">Pokedex</h1>
@@ -24,6 +25,8 @@ function Pokedex({ pokemons }) {
           )
         }
       </ul>
+      <p>Total EXP: { totalExp }</p>
+      <p>{ isWinner ? "THIS HAND WINS!" : "This hand lost." }</p>
     </div>
   )
 };
