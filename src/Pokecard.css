@@ -4,7 +4,11 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  padding-bottom: 5px;
+  padding-bottom: 1px;
+  list-style-type: none;
+  width:225px;
+  height:225px;
+  border-radius: 12px;
 }
 
 .Pokecard-name {

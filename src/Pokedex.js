@@ -11,8 +11,18 @@ function Pokedex({ pokemons }) {
     <div className="Pokedex">
       <h1 className="Pokedex-name">Pokedex</h1>
       <ul className="Pokedex-pokemon">
-        {pokemons.map(p => <li><Pokecard(p)></li>)};
-        {/* TODO: never call components as function */}
+        {pokemons.map(
+          p =>
+              <li className="Pokedex-pokecard">
+                <Pokecard
+                  id = {p.id}
+                  name = {p.name}
+                  type = {p.type}
+                  base_experience = {p.base_experience}
+                />
+              </li>
+          )
+        };
       </ul>
     </div>
   )

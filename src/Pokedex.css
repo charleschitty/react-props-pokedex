@@ -1,7 +1,10 @@
 .Pokedex {
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
 }
 
 .Pokedex-name {
@@ -10,9 +13,14 @@
 
 .Pokedex-pokemon {
   flex-direction: row;
-  display: inline-block;
+  flex-wrap: wrap;
+  display: flex;
+  margin: 50px;
+  gap: 30px;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 200px;
+}
+
+.Pokedex-pokecard {
+  list-style-type: none;
 }
