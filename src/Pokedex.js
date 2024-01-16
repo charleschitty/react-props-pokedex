@@ -11,7 +11,8 @@ function Pokedex({ pokemons }) {
     <div className="Pokedex">
       <h1 className="Pokedex-name">Pokedex</h1>
       <ul className="Pokedex-pokemon">
-        {pokemons.map(p => <li>{Pokecard(p)}</li>)};
+        {pokemons.map(p => <li><Pokecard(p)></li>)};
+        {/* TODO: never call components as function */}
       </ul>
     </div>
   )
