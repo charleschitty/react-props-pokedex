@@ -16,10 +16,13 @@ function Pokegame({ pokemons }) {
   const firstHand = pokemons.slice(0, pokemons.length / 2);
   const secondHand = pokemons.slice(pokemons.length / 2);
 
-  // FIND what x.base_experience is if it's a number or not
-  const firstHandExp = firstHand.map(x => x.base_exerience).reduce((a, b) => a + b, 0);
-  const secondHandExp = secondHand.map(x => x.base_exerience).reduce((a, b) => a + b, 0);
-  debugger;
+  const firstHandExp = firstHand
+    .map(x => x.base_experience)
+    .reduce((a, b) => a + b, 0);
+
+  const secondHandExp = secondHand
+    .map(x => x.base_experience)
+    .reduce((a, b) => a + b, 0);
 
   return (
     <div>

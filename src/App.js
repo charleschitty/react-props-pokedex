@@ -1,4 +1,3 @@
-import { Pokedex } from "./Pokedex";
 import { Pokegame } from "./Pokegame";
 
 const POKEMONS = [
